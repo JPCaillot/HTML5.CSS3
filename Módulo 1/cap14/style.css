@@ -1,0 +1,57 @@
+/* CSS HEX 
+--tea-green: #c4d6b0ff;
+--lavender-blue: #c3bef7ff;
+--space-cadet: #2e294eff;
+--teal-blue: #537d8dff;
+--dark-orange: #fb8b24ff;
+
+ CSS HSL 
+--tea-green: hsla(88, 32%, 76%, 1);
+--lavender-blue: hsla(245, 78%, 86%, 1);
+--space-cadet: hsla(248, 31%, 23%, 1);
+--teal-blue: hsla(197, 26%, 44%, 1);
+--dark-orange: hsla(29, 96%, 56%, 1);
+
+https://coolors.co/c4d6b0-c3bef7-2e294e-537d8d-fb8b24
+*/
+@charset "UTF-8";
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: linear-gradient(to left, #c3bef7, #c4d6b0);
+}
+
+main {
+    background-color: #edf3f5;
+    padding: 10px;
+    box-shadow: 10px 10px 50px 1px #2e294eb0;
+    border-radius: 10px;
+    width: 570px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #2e294e;
+}
+
+h2 {
+    text-align: center;
+    color: #314b55;
+}
+
+p {
+    text-align: justify;
+    text-indent: 10px;
+    color: #314b55;
+}
+
+#botao {
+    background-color: #fb8b24;
+    border-radius: 5px;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    text-shadow: 0.5px 0.5px 2px white;
+    margin-left: 190px;
+}
