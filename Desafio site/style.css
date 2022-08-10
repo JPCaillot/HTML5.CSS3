@@ -4,28 +4,35 @@
     font-family: 'idroid';
     src: url('fontes/idroid.otf') format('opentype');
 }
+:root{
+    --cor0: #dff4e8;
+    --cor1: #84e1ad;
+    --cor2: #2fa866;
+    --cor3: #185233;
 
+    --fonte-titulo: Barlow Condensed, sans-serif;
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+    --fonte-idroid: idroid, sans-serif;
+}
 
 body{
     margin: 0;
-    background-color: #84E1AD;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor1);
+    font-family: var(--fonte-padrao);
     padding: 10px;
 }
 header {
-    background-image: linear-gradient(to top, #185233, #3CD782);
+    background-image: linear-gradient(to top, var(--cor3), var(--cor2));
     color: white;
     margin: -10px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.842);
-    
-    /* Falta a fonte */
 }
 
 h1 {
     margin: 0;
     padding: 30px;
     text-align: center;
-    font-family: Barlow Condensed, sans-serif;
+    font-family: var(--fonte-titulo);
     font-size: 3em;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.377);
 }
@@ -48,7 +55,7 @@ nav > a {
     font-weight: bold;
 }
 nav > a:hover {
-    background-color: #84E1AD;
+    background-color: var(--cor1);
     color: black;
     border-radius: 5px;
     transition-duration: .2s;
@@ -56,7 +63,7 @@ nav > a:hover {
 main {
     background-color: white;
     border-radius: 0 0 10px 10px;
-    max-width: 800px;
+    max-width: 900px;
     min-width: 300px;
     margin: auto;
     
@@ -67,27 +74,28 @@ main {
 }
 article {
     padding: 20px;
+    
 }
 h2 {
     margin: 0;
-    font-family: idroid, sans-serif;
-    color: #185233;
+    font-family: var(--fonte-idroid);
+    color: var(--cor3);
 }
 h3 {
-    font-family: idroid, sans-serif; 
-    color: #185233;
-    background-color: #DFF4E8;
+    font-family: var(--fonte-idroid); 
+    color: var(--cor3);
+    background-color: var(--cor0);
 }
 .video {
     text-indent: 0;
     text-align: center;
-    background-color: #185233;
-    border: 15px solid #185233;
+    background-color: var(--cor3);
+    border: 15px solid var(--cor3);
     margin: 0px;
     position: relative;
     padding: 50px;
     padding-bottom: 45%;
-    /* problema na mudança de tamanho e no tamanho mínimo de página */
+    /* adaptações para manter o vídeo responsivo, ainda sem media query */
 }
 .video > iframe {
     position: absolute;
@@ -99,24 +107,17 @@ h3 {
 
 .pictures {
     text-align: center;
+    text-indent: 0%;
 }
 
-
-
-
-video {
-    background-color: #185233;
-    padding: 10px 20px;
-    /*display: block;    // não sei se é assim, fazer o bloco do vídeo tomar a main toda*/
-}
 aside {
-    background-color: #DFF4E8;
+    background-color: var(--cor0);
     border-radius: 7px;
     padding: 0px;
     margin: 10px 0px;
 }
 h4 {
-    background-color: #2FA866;
+    background-color: var(--cor2);
     color: white;
     padding: 5px;
     border-radius: 7px 7px 0 0;
@@ -130,7 +131,7 @@ section {
     padding: 7px;
 }
 footer {
-    background-color: #185233;
+    background-color: var(--cor3);
     color: white;
     padding: 5px;
     text-align: center;
